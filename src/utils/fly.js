@@ -1,10 +1,10 @@
 /*
  * @Author: 翟海祥
  * @Date: 2020-04-16 20:28:53
- * @LastEditTime: 2020-04-24 13:16:32
+ * @LastEditTime: 2020-05-03 16:40:56
  * @LastEditors: 翟海祥
  * @Description:
- * @FilePath: \maicai\src\utils\fly.js
+ * @FilePath: \小程序框架\src\utils\fly.js
  */
 /**
  * Created by zhengyi.fu on 2018/8/31.
@@ -15,7 +15,7 @@ const host = "https://www.tuancaicn.com/api/v1/"
 import commonStore from "../store";
 //添加请求拦截器
 fly.interceptors.request.use((request) => {
-  
+
   console.log('request', request);
   if(request.needLoading){
     wx.showLoading({
@@ -58,7 +58,7 @@ fly.interceptors.response.use(
     setTimeout(() => {
       wx.hideLoading();
     }, 1000);
-    
+
     if(response.data.status !== 100){
       wx.showToast({
         title: JSON.stringify(response.data.msg),

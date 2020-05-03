@@ -106,14 +106,14 @@
           <img :src="banner2[index].img_id.url" mode="widthFix">
         </swiper-item>
       </swiper>
-      <ul class="indexQuanList">
+      <!-- <ul class="indexQuanList">
         <li v-for="(item, index) in quan" :key="index" @click="addQuan(item.id)" :class="{'one': quan.length <= 1,'two': quan.length >= 1}">
           <div class="quanImg">
             <img src="../../../static/images/quan.png" mode="widthFix">
           </div>
           <p>{{ item.money }}元优惠券</p>
         </li>
-      </ul>
+      </ul> -->
     </div>
     <!--商品推荐-->
     <div class="productCategory">
